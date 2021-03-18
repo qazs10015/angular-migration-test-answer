@@ -1,0 +1,11 @@
+<table border="1">
+    <th *ngFor="let col of cols">{{col}}</th>
+    <tr *ngFor="let data of tableData">
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td [ngStyle]="{color:(data[2] === '+')?'red':'green'}">{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+        <td>{{data[4]}}</td>
+        <td>{{data[5]}}</td>
+    </tr>
+</table>
